@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecentOrdersFragment">
+
+    <!-- RecyclerView to display recent orders -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecentOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:background="@android:color/background_light"
+        android:layout_above="@+id/bottom_margin"/>
+
+    <!-- Add a bottom margin to avoid overlap with bottom navigation or other UI elements -->
+    <View
+        android:id="@+id/bottom_margin"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light" />
+
+</RelativeLayout>
