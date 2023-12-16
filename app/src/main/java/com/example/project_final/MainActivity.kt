@@ -38,14 +38,14 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_home -> {
                     // Handle Home button click
-                    // Add your code to navigate to the Home screen
+                    // code to navigate to the Home screen
                     val homeIntent = Intent(this, HomeScreen::class.java)
                     startActivity(homeIntent)
                     true
                 }
                 R.id.nav_recent_orders -> {
                     // Handle Recent Orders button click
-                    // Add your code to navigate to the Recent Orders screen
+                    //  code to navigate to the Recent Orders screen
                     val recentOrdersIntent = Intent(this, RecentOrdersFragment::class.java)
                     startActivity(recentOrdersIntent)
                     true

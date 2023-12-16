@@ -104,7 +104,6 @@ class CheckoutScreen : AppCompatActivity() {
                 }
 
                 // Now, you have the list of order items in the 'foodItems' variable
-                // You can update your UI or perform further actions with this data
             }
             .addOnFailureListener { exception ->
                 // Handle errors
@@ -155,8 +154,8 @@ class CheckoutScreen : AppCompatActivity() {
                 // Show a notification
                 showNotification()
 
-                // Navigate to the Orders screen after placing the order (replace this with your actual navigation logic)
-                // Example: startActivity(Intent(this, OrdersActivity::class.java))
+                // Navigate to the Orders screen after placing the order
+                val intent = Intent(this, OrdersScreen::class.java)
             }
             .addOnFailureListener { e ->
                 // Handle errors

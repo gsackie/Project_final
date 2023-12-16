@@ -65,7 +65,6 @@ class RecentOrdersFragment : Fragment() {
     private fun placeOrderAgain(selectedOrder: Order) {
         // Save the order again to the database in Firestore
 
-        // For demonstration purposes, assuming you have a "orders" collection
         val ordersCollection = firestore.collection("orders")
 
         // Create a new order with the same items and the current date

@@ -43,7 +43,7 @@ class RestaurantImageFragment : Fragment() {
                 }
             }
 
-            // Set up the ViewPager with the loaded images
+            // Setting up the ViewPager with the loaded images
             viewPager.adapter = RestaurantImageAdapter(images)
         }.addOnFailureListener { exception ->
             // Handle the failure to retrieve images

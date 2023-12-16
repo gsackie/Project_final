@@ -49,7 +49,6 @@ class CheckoutBackgroundService : Service() {
 
     // Example: Check if delivery time is over (dummy implementation)
     private fun isDeliveryTimeOver(): Boolean {
-        // Replace this with your actual logic for checking if delivery time is over
         return false
     }
 

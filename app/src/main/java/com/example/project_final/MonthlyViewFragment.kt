@@ -70,10 +70,10 @@ class MonthlyViewFragment : Fragment() {
                 for (document in querySnapshot.documents) {
                     val date = document.getDate("date")
                     if (date != null) {
-                        // Highlight the day on the calendar
+
                         highlightDate(date)
 
-                        // Display the amount of dollars spent on that day
+
                         val dollarsSpent = document.getDouble("dollarsSpent")
                         if (dollarsSpent != null) {
                             val day = CalendarDay.from(date)

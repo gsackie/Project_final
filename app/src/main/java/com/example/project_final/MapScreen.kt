@@ -28,7 +28,7 @@ class MapScreen : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        // Use the selected order details to calculate the distance and draw the route on the map
+        // Using the selected order details to calculate the distance and draw the route on the map
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
